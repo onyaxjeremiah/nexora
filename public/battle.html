@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nexora Battle</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b>NEXORA</b><span>ONLINE BATTLE</span><button onclick="location.href='arena.html'">ROOMS</button></header>
+<main class="arena"><section class="topbar"><div><strong>ROOM</strong> <span id="room">------</span></div><div id="turn">CONNECTING…</div><div id="msg"></div></section>
+<section id="opponent" class="side"></section>
+<section class="field"><div id="opactive"></div><div class="versus">VS</div><div id="myactive"></div></section>
+<section><h3>BENCH</h3><div id="mybench" class="rowcards"></div></section>
+<section class="handsection"><h3>YOUR HAND</h3><div id="hand" class="hand"></div></section>
+<section class="controls"><button id="drawBtn" onclick="draw()">DRAW</button><button id="attackBtn" onclick="attack()">ATTACK</button><button id="endBtn" onclick="endTurn()">END TURN</button></section>
+<section id="supporters"></section><section id="energy"></section><section id="deadly"></section><div id="chooser" class="chooser hidden"><div class="chooserbox"><h2 id="chooseTitle">Choose cards</h2><div id="chooseCount">0/0 selected</div><div id="chooseList"></div><button id="chooseConfirm" onclick="confirmCards()" disabled>CONFIRM</button><button onclick="closeChooser()">CANCEL</button></div></div>
+<section class="chat"><input id="chat" maxlength="120" placeholder="Safe message"><button onclick="sendChat()">SEND</button><div id="chatlog"></div></section></main>
+<script src="battle.js"></script></body></html>
