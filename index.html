@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Online Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">NEXORA</div>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#battle">Battle</a>
+    <a href="#cards">Cards</a>
+    <a href="#characters">Characters</a>
+    <a href="#rooms">Rooms</a>
+  </nav>
+
+  <button id="soundToggle">🔊</button>
+</header>
+
+<main id="home">
+
+  <section class="hero">
+
+    <img
+      class="hero-image"
+      src="nexora-home.png"
+      alt="Nexora colorful game interface"
+    >
+
+    <button class="play-button" onclick="startBattle()">
+      PLAY NOW
+    </button>
+
+    <button class="login-button">LOGIN</button>
+    <button class="register-button">REGISTER</button>
+
+  </section>
+
+  <section class="features" id="battle">
+
+    <article class="feature">
+      <h2>⚔️ Online Battle</h2>
+      <p>Choose your Nexora and enter an exciting battle.</p>
+    </article>
+
+    <article class="feature" id="rooms">
+      <h2>🏠 Battle Rooms</h2>
+      <p>Create or join a room and battle other players.</p>
+    </article>
+
+    <article class="feature" id="cards">
+      <h2>🎴 Nexora Cards</h2>
+      <p>Collect powerful cards and build your deck.</p>
+    </article>
+
+    <article class="feature">
+      <h2>⚡ Energy</h2>
+      <p>Use energy to power your Nexora attacks and abilities.</p>
+    </article>
+
+  </section>
+
+  <section class="characters" id="characters">
+
+    <h2>🐲 Meet the Nexora</h2>
+
+    <div class="character-grid">
+
+      <article class="character">
+        <div class="character-image">🔥</div>
+        <h3>Flareonix</h3>
+        <p>Fire Nexora</p>
+      </article>
+
+      <article class="character">
+        <div class="character-image">💧</div>
+        <h3>AquaStorm</h3>
+        <p>Water Nexora</p>
+      </article>
+
+      <article class="character">
+        <div class="character-image">🌿</div>
+        <h3>Leafyra</h3>
+        <p>Nature Nexora</p>
+      </article>
+
+      <article class="character">
+        <div class="character-image">⚡</div>
+        <h3>Zephyron</h3>
+        <p>Lightning Nexora</p>
+      </article>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <span>🎵 NEXORA THEME</span>
+  <span>COLLECT • TRAIN • BATTLE • BE THE BEST</span>
+  <span id="soundStatus">SOUND ON</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
