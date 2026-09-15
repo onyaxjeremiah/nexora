@@ -11,6 +11,10 @@ html, body {
 
 body {
     margin: 0;
+        background-image: url("https://raw.githubusercontent.com/onyaxjeremiah/nexora/main/ChatGPT%20Image%20Sep%2015%2C%202026%2C%2011_37_47%20AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     color: white;
