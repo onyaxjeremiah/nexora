@@ -211,4 +211,41 @@ a:hover {
     .game-panel {
         border-radius: 14px;
     }
+    /* Nexora character cards */
+.character-image {
+    height: 220px;
+    border-radius: 12px;
+    background-image: url("https://raw.githubusercontent.com/onyaxjeremiah/nexora/main/ChatGPT%20Image%20Sep%2014%2C%202026%2C%2006_04_53%20PM.png");
+    background-repeat: no-repeat;
+    background-size: 700% 100%;
+    background-position-y: center;
+}
+
+.character-blazetail {
+    background-position-x: 0%;
+}
+
+.character-coralyn {
+    background-position-x: 16.6667%;
+}
+
+.character-thornfang {
+    background-position-x: 33.3333%;
+}
+
+.character-voltiger {
+    background-position-x: 50%;
+}
+
+.character-stoneback {
+    background-position-x: 66.6667%;
+}
+
+.character-glacub {
+    background-position-x: 83.3333%;
+}
+
+.character-duskswing {
+    background-position-x: 100%;
+}
 }
