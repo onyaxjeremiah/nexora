@@ -222,30 +222,30 @@ a:hover {
 }
 
 .character-blazetail {
-    background-position-x: 0%;
+   background-position: left center;
 }
 
 .character-coralyn {
-    background-position-x: 16.6667%;
+    background-position: 16.6667% center;
 }
 
 .character-thornfang {
-    background-position-x: 33.3333%;
+    background-position: 33.3333% center;
 }
 
 .character-voltiger {
-    background-position-x: 50%;
+    background-position: 50% center;
 }
 
 .character-stoneback {
-    background-position-x: 66.6667%;
+    background-position: 66.6667% center;
 }
 
 .character-glacub {
-    background-position-x: 83.3333%;
+    background-position: 83.3333% center;
 }
 
 .character-duskswing {
-    background-position-x: 100%;
+    background-position: right center;
 }
 }
