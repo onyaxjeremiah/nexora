@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     min-height: 100%;
     font-family: Arial, sans-serif;
@@ -10,301 +11,204 @@ html, body {
 }
 
 body {
-    margin: 0;
-        background-image: url("https://raw.githubusercontent.com/onyaxjeremiah/nexora/main/ChatGPT%20Image%20Sep%2015%2C%202026%2C%2011_37_47%20AM.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    color: white;
-
     background-image:
-        linear-gradient(rgba(0, 5, 25, 0.25), rgba(0, 5, 25, 0.25)),
-        url("nexora-bg.png");
-
+        linear-gradient(rgba(5, 8, 25, 0.35), rgba(5, 8, 25, 0.55)),
+        url("https://raw.githubusercontent.com/onyaxjeremiah/nexora/main/ChatGPT%20Image%20Sep%2015%2C%202026%2C%2011_37_47%20AM.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* TOP NAVIGATION */
-
-.navbar {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 8px 20px;
-    background: rgba(2, 5, 25, 0.96);
-    border-bottom: 2px solid #16a8ff;
-    box-shadow: 0 0 25px #159dff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 32px;
-    font-weight: 1000;
-    font-style: italic;
-    color: #ffd21f;
-    text-shadow:
-        2px 3px #f04412,
-        0 0 15px #20aaff;
-}
-
-.nav-links {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    flex: 1;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background: #08265f;
-    border: 1px solid #20aaff;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.nav-links a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 18px #16aaff;
-    background: #123d91;
-}
-
-/* NEXORA HERO */
-
-.hero {
+/* Main page */
+.container,
+main,
+#app {
     position: relative;
-    width: 100%;
-    max-width: 1500px;
-    margin: 20px auto;
-    padding: 12px;
+    z-index: 1;
 }
 
-.hero-image {
-    width: 100%;
-    display: block;
-    border-radius: 22px;
-    border: 2px solid #16aaff;
-    box-shadow:
-        0 0 25px #0ca6ff,
-        0 0 70px #6c19c9;
+/* Nexora title */
+h1,
+h2,
+h3 {
+    text-shadow:
+        0 0 8px rgba(0, 200, 255, 0.8),
+        0 0 18px rgba(120, 70, 255, 0.6);
 }
 
-/* COLORFUL GLOW */
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 12px;
-    border-radius: 22px;
-    pointer-events: none;
-    box-shadow: inset 0 0 80px #159dff55;
-}
-
-/* GAME BUTTONS */
-
-.play-button {
-    position: absolute;
-    left: 50%;
-    top: 31%;
-    transform: translate(-50%, -50%);
-    padding: 16px 35px;
-    border-radius: 15px;
-    background: linear-gradient(90deg, #ff351c, #ffb51d);
-    color: white;
-    font-size: 24px;
-    font-weight: 1000;
-    border: 2px solid #ffe35b;
-    box-shadow:
-        0 0 20px #ff6824,
-        0 0 45px #ff351c;
-    cursor: pointer;
-}
-
-.play-button:hover {
-    transform: translate(-50%, -50%) scale(1.08);
-}
-
-.login-button,
-.register-button {
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    padding: 9px 20px;
-    border-radius: 10px;
-    background: #08265f;
-    border: 1px solid #22aaff;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.login-button {
-    left: 44%;
-}
-
-.register-button {
-    left: 56%;
-}
-
-/* FEATURE CARDS */
-
-.features {
-    max-width: 1200px;
-    margin: auto;
-    padding: 25px 20px 60px;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-}
-
-.feature {
-    min-height: 150px;
-    padding: 22px;
+/* Glass-style panels */
+section,
+.card,
+.panel,
+.room,
+.arena,
+.game-panel {
+    background: rgba(10, 15, 40, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(5, 29, 80, 0.95),
-            rgba(58, 7, 91, 0.95)
-        );
-
-    border: 1px solid #18aaff;
-
     box-shadow:
-        0 0 20px #087dff55,
-        inset 0 0 25px #8120bb33;
-
-    transition: 0.25s;
+        0 8px 30px rgba(0, 0, 0, 0.45),
+        inset 0 0 25px rgba(80, 100, 255, 0.08);
+    backdrop-filter: blur(5px);
 }
 
-.feature:hover {
-    transform: translateY(-7px);
+/* Buttons */
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 5px;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
     box-shadow:
-        0 0 30px #18aaff,
-        0 0 50px #7b1dcc;
+        0 8px 22px rgba(50, 100, 255, 0.45);
 }
 
-.feature h2 {
-    margin-top: 0;
-    color: #ffd52b;
+button:active {
+    transform: scale(0.97);
 }
 
-.feature p {
-    color: #d7ecff;
-    line-height: 1.5;
+/* Text inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    outline: none;
 }
 
-/* CHARACTER SECTION */
-
-.characters {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 20px;
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.35);
 }
 
-.character-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+/* Character areas */
+.character,
+.character-card,
+.player-card,
+.nexora-card {
+    background: rgba(15, 20, 50, 0.75);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    transition: transform 0.2s ease;
 }
 
-.character {
+.character:hover,
+.character-card:hover,
+.player-card:hover,
+.nexora-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Character images */
+.character img,
+.character-card img,
+.player-card img,
+.nexora-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Battle arena */
+#battle,
+.battle,
+.battle-arena {
+    background: rgba(0, 0, 0, 0.42);
+    border: 2px solid rgba(96, 165, 250, 0.35);
+    border-radius: 22px;
     padding: 20px;
-    min-height: 220px;
-    text-align: center;
+    box-shadow:
+        0 0 30px rgba(37, 99, 235, 0.2),
+        inset 0 0 30px rgba(124, 58, 237, 0.1);
+}
 
+/* Health bars */
+.health-bar {
+    height: 14px;
     border-radius: 20px;
-
-    background:
-        radial-gradient(circle at 50% 20%, #168cff55, transparent 40%),
-        linear-gradient(145deg, #071a4d, #35076a);
-
-    border: 2px solid #20aaff;
-
-    box-shadow: 0 0 25px #168cff55;
-
-    transition: 0.25s;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.character:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 35px #20aaff;
+.health-bar > div {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #22c55e, #84cc16);
+    transition: width 0.3s ease;
 }
 
-.character-image {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin: auto;
-}
-
-.character h3 {
-    color: #ffd42b;
-}
-
-/* FOOTER */
-
-footer {
+/* Room / lobby */
+.rooms,
+.room-list,
+.lobby {
+    background: rgba(5, 10, 30, 0.65);
+    border-radius: 18px;
     padding: 20px;
-    background: #02051c;
-    border-top: 1px solid #19aaff;
-
-    display: flex;
-    justify-content: space-between;
-
-    color: #bdeaff;
 }
 
-/* MOBILE */
-
-@media (max-width: 900px) {
-
-    .features {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .character-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nav-links {
-        overflow-x: auto;
-    }
+/* Links */
+a {
+    color: #93c5fd;
+    text-decoration: none;
 }
 
-@media (max-width: 600px) {
+a:hover {
+    color: white;
+    text-shadow: 0 0 8px #60a5fa;
+}
 
-    .navbar {
-        height: auto;
-        flex-wrap: wrap;
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(96, 165, 250, 0.6);
+    border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    body {
+        background-attachment: scroll;
+        background-position: center top;
     }
 
-    .features {
-        grid-template-columns: 1fr;
+    button {
+        width: 100%;
+        margin: 5px 0;
     }
 
-    .character-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .play-button {
-        font-size: 15px;
-        padding: 10px 18px;
-    }
-
-    footer {
-        flex-direction: column;
+    section,
+    .card,
+    .panel,
+    .room,
+    .arena,
+    .game-panel {
+        border-radius: 14px;
     }
 }
