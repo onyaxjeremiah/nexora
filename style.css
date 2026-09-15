@@ -10,11 +10,19 @@ html, body {
 }
 
 body {
-    background:
-        radial-gradient(circle at 15% 15%, #168cff, transparent 30%),
-        radial-gradient(circle at 85% 30%, #a321d8, transparent 30%),
-        radial-gradient(circle at 50% 90%, #ff4b22, transparent 25%),
-        linear-gradient(135deg, #02052b, #17064d, #032d6b);
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0, 5, 25, 0.25), rgba(0, 5, 25, 0.25)),
+        url("nexora-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* TOP NAVIGATION */
